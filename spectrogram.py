@@ -2,7 +2,7 @@
 """
 Created on Tue Jan 31 16:19:03 2023
 
-@author: u56356
+@author: Adem Yıldırım
 """
 
 import pandas as pd
@@ -15,7 +15,7 @@ from seffaflik.__ortak.__araclar import make_requests as __make_requests
 Baslangic_Trh = "2018-01-01"  
 Bitis_Trh = "2022-12-31"    
 
-###verinin çekilmesi   
+###fiyat verisinin çekilmesi   
 
 __first_part_url_market = "market/day-ahead-mcp"
 particular_url = __first_part_url_market + "?startDate=" + Baslangic_Trh + "&endDate=" + Bitis_Trh
@@ -23,6 +23,7 @@ json = __make_requests(particular_url)
 ptf = pd.DataFrame(json["body"]["dayAheadMCPList"])
 ptf2 = ptf.reset_index() #saatlik veri bu tabloda
 
+###tüketim verisinin çekilmesi 
 __second_part_url_market = "consumption/real-time-consumption"
 particular_url = __second_part_url_market + "?startDate=" + Baslangic_Trh + "&endDate=" + Bitis_Trh
 json = __make_requests(particular_url)
