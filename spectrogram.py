@@ -8,7 +8,7 @@ Created on Tue Jan 31 16:19:03 2023
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
+import math
 import seffaflik
 from seffaflik.__ortak.__araclar import make_requests as __make_requests
 
@@ -22,8 +22,8 @@ particular_url = __first_part_url_market + "?startDate=" + Baslangic_Trh + "&end
 json = __make_requests(particular_url)
 ptf = pd.DataFrame(json["body"]["dayAheadMCPList"])
 ptf2 = ptf.reset_index() #saatlik veri bu tabloda
-ptf2["price1"] = ptf2["price"] + 11
-ptf2["pricelog"] = np.log10(ptf2["price1"])-np.log10(11)
+ptf2["price1"]   = ptf2["price"] + 1
+ptf2["pricelog"] = np.log(ptf2["price1"])-np.log(1)
 
 __second_part_url_market = "consumption/real-time-consumption"
 particular_url = __second_part_url_market + "?startDate=" + Baslangic_Trh + "&endDate=" + Bitis_Trh
@@ -32,7 +32,7 @@ consumptions = pd.DataFrame(json["body"]["hourlyConsumptions"])
 consumptions = consumptions.reset_index() #saatlik veri bu tabloda
 
 #kolay pivotlansın diye yeni kolonlar eklendi 
-ptf2["date-daily"]   = ptf2["date"].str[:10]
+ptf2["date-daily"]    = ptf2["date"].str[:10]
 ptf2["date-mounth"]   = ptf2["date"].str[:7]
 consumptions["date-daily"]   = consumptions["date"].str[:10]
 consumptions["date-mounth"]   = consumptions["date"].str[:7]
