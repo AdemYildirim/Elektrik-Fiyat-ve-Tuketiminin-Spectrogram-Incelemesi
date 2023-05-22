@@ -2,9 +2,9 @@
 
 Veriler 2018 yılından 2022 yılı sonuna kadar saatlik formatta çekilmiştir. Saatlik elektrik fiyatları incelenmiş ve görselleri aşağıda sunulmuştur. Sol altta bulunan grafik saatlik değerlin çizgi grafikte görselidir. Sağ altta bulunan grafik ise saatlik elektrik fiyatlarının logaritmaları alınmış ve görselleştirilmiştir. Verinin 10 tabanında logatitması alınmış ve negatif-tanımsız logaritma değerlerini yok etmek için saatlik fiyatlara 11 tam sayısı eklenmiş sonrasında 10 tabanında logaritması  alınmış son aşamada da 10 tabanında log(11), logartiması alınan kolondan çıkarılmıştır. Aşağıdaki formül seti uygulanmıştır.  
 
-ptf["pricekukla"] = ptf2["price"] + 11
+ptf["pricekukla"] = ptf2["price"] + 1
 
-ptf["pricelog"] = np.log10(ptf2["pricekukla"])-np.log10(11)
+ptf["pricelog"] = np.log(ptf2["pricekukla"])-np.log(1)
 
  ![Figure 2023-02-16 130847](https://user-images.githubusercontent.com/58287201/219335674-87e0efd5-6d44-4b96-a4fb-e5d6f0b059de.png) 
  ![Figure 2023-03-08 013120](https://user-images.githubusercontent.com/58287201/223568905-06cfd701-b7c2-42e5-8f94-feded70c0285.png)
