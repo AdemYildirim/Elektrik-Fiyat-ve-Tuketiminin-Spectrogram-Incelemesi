@@ -45,8 +45,8 @@ Aşağıdaki grafiklerde elektrik fiyat ve tüketimi için oluşturulan spectrog
 ![daily spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/ef42c2ae-bb00-4b59-8887-e3a03ce9e559)
 ![monthly spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/2f0b868e-a6b0-48fb-908c-1e8dd5511c3a)
 
-Bir sonraki aşamada modelleme ve tahminleme aşamasına geçilmiştir. Modelleme için aşağıdaki modeler denenmiştir. \n
-        LightGBM \t
+Bir sonraki aşamada modelleme ve tahminleme aşamasına geçilmiştir. Modelleme için aşağıdaki 9 yöntem ile modeler denenmiştir. Herbir senaryo için data %10 test datası olacak şekilde bölünmüştür. Performans değeri bu % 10 için ölçülmüştür. 
+        LightGBM 
         Adaboost
         Catboost
         XGboost
@@ -54,7 +54,7 @@ Bir sonraki aşamada modelleme ve tahminleme aşamasına geçilmiştir. Modellem
         Linear Regression
         Polinomial Regression
         Random Forest
-        Decission Tree
+        Decision Tree
 
 Belirtilen modeller saatlik data için fit edilmiş ve sonuçları aşağıdaki görselde sunulmuştur. Performans beklenenden düşük çıkmıştır. Performans metriği içinde MAPE değerleri hesaplanmıştır. MAPE değerleri de aşağıdaki görselde mevcuttur. 
 
@@ -62,7 +62,17 @@ Belirtilen modeller saatlik data için fit edilmiş ve sonuçları aşağıdaki 
 ![saatlik tahmin](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/a2419ab1-babf-492d-9457-db980c119e8c)
 ![saatlik korelasyon](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/5d7eda1c-569d-43c1-a2df-a9ed823f8640)
 
-      
+Belirtilen modeller günlük data için fit edilmiş ve sonuçları aşağıdaki görselde sunulmuştur. Performans metriği içinde MAPE değerleri hesaplanmıştır. MAPE değerleri de aşağıdaki görselde mevcuttur.  
+
+![günlük mape](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/8a24eb65-134e-4ffe-b11a-8472814e2092)
+![günlük tahmin](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/0e51d4be-7807-4629-b75b-6c62f83598e2)
+![günlük korelasyon](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/6dc87e83-7347-487f-85e2-2205f58ff138)
+
+Belirtilen modeller aylık data için fit edilmiş ve sonuçları aşağıdaki görselde sunulmuştur. Performans metriği içinde MAPE değerleri hesaplanmıştır. MAPE değerleri de aşağıdaki görselde mevcuttur.  
+
+![aylık mape](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/943c7554-1aba-4e56-b206-824eb211c9fe)
+![aylık tahmin](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/3e769de8-6cdc-4fc6-86b9-d49f6d4d3a69)
+![aylık korelasyon](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/49a919c4-ae00-4f51-ab1a-783390caf7ef)
 
 
 ARIMA Görsellerinin Sunulması: 
