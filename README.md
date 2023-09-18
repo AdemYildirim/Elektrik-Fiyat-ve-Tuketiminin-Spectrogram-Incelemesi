@@ -35,10 +35,20 @@ Aylık ortalama değerlerin spectrogramları aşağıdaki görselde sunulmuştur
 
 ![Figure 2023-03-08 015450](https://user-images.githubusercontent.com/58287201/223572788-292863c2-1b16-487d-9b04-3c4f5304386e.png)
 
-Spectrogramlar incelenmiş görsel bir ilişki olduğu farkedilmiştir. Bu görsel ilişkinin matematiksel ıspatı için spectrogramınların sayısal değerleri image filtering metodu ile edilmiştir. Elde edilen değerlerden birbirine en yakın kolonlar seçilmiş ve korelasyok katsayıları hesaplanmıştır. Aşağıdaki tabloda korelasyon katsayıları sunulmuştur. 
+Spectrogramlar incelenmiş görsel bir ilişki olduğu farkedilmiştir. Bu görsel ilişkinin matematiksel ıspatı için spectrogramınların sayısal değerleri image filtering metodu ile edilmiştir. Elde edilen değerlerden birbirine en yakın kolonlar seçilmiş ve korelasyok katsayıları hesaplanmıştır. Aşağıdaki tabloda korelasyon katsayıları sunulmuştur. Bu korelasyon katsayıları sayesinde ilişki matematiksel olarakta ıspatlanmış oldu. 
 
 ![image](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/0b1748ab-11ad-4d34-ad5f-3d0736e16258)
 
+Aşağıdaki grafiklerde elektrik fiyat ve tüketimi için oluşturulan spectrogramların image processing ile iki kolonunun sayıya dönüştürülmüş değerleri çizgi grafik ile görselleştirilmiştir. Saatlik, günlük ve aylık değerler için 3 farklı grafik bulunmaktadır. 
+
+![hourly spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/a9a4bbda-7dda-448a-8690-480d0ecd902f)
+![daily spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/ef42c2ae-bb00-4b59-8887-e3a03ce9e559)
+![monthly spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/2f0b868e-a6b0-48fb-908c-1e8dd5511c3a)
+
+Bir sonraki aşamada modelleme ve tahminleme aşamasına geçilmiştir. Modelleme için aşağıdaki modeler denenmiştir.
+     -> 
+     *
+     -
 
 ARIMA Görsellerinin Sunulması: 
 Otokorelasyon görselleri saatlik veriler için aşağıda sunulmuştur. 
