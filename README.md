@@ -35,6 +35,10 @@ Aylık ortalama değerlerin spectrogramları aşağıdaki görselde sunulmuştur
 
 ![Figure 2023-03-08 015450](https://user-images.githubusercontent.com/58287201/223572788-292863c2-1b16-487d-9b04-3c4f5304386e.png)
 
+Spectrogramlar incelenmiş görsel bir ilişki olduğu farkedilmiştir. Bu görsel ilişkinin matematiksel ıspatı için spectrogramınların sayısal değerleri image filtering metodu ile edilmiştir. Elde edilen değerlerden birbirine en yakın kolonlar seçilmiş ve korelasyok katsayıları hesaplanmıştır. Aşağıdaki tabloda korelasyon katsayıları sunulmuştur. 
+
+![image](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/0b1748ab-11ad-4d34-ad5f-3d0736e16258)
+
 
 ARIMA Görsellerinin Sunulması: 
 Otokorelasyon görselleri saatlik veriler için aşağıda sunulmuştur. 
