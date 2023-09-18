@@ -46,9 +46,24 @@ Aşağıdaki grafiklerde elektrik fiyat ve tüketimi için oluşturulan spectrog
 ![monthly spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/2f0b868e-a6b0-48fb-908c-1e8dd5511c3a)
 
 Bir sonraki aşamada modelleme ve tahminleme aşamasına geçilmiştir. Modelleme için aşağıdaki modeler denenmiştir.
-     -> 
-     *
-     -
+        LightGBM
+        Adaboost
+        Catboost
+        XGboost
+        SVR Regression
+        Linear Regression
+        Polinomial Regression
+        Random Forest
+        Decission Tree
+
+Belirtilen modeller saatlik data için fit edilmiş ve sonuçları aşağıdaki görselde sunulmuştur. Performans beklenenden düşük çıkmıştır. Performans metriği içinde MAPE değerleri hesaplanmıştır. MAPE değerleri de aşağıdaki görselde mevcuttur. 
+
+![saatlik mape](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/46dcdac3-f32a-4f2d-8ad0-931b60ff39fe)
+![saatlik tahmin](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/a2419ab1-babf-492d-9457-db980c119e8c)
+![saatlik korelasyon](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/5d7eda1c-569d-43c1-a2df-a9ed823f8640)
+
+      
+
 
 ARIMA Görsellerinin Sunulması: 
 Otokorelasyon görselleri saatlik veriler için aşağıda sunulmuştur. 
