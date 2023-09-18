@@ -45,16 +45,16 @@ Aşağıdaki grafiklerde elektrik fiyat ve tüketimi için oluşturulan spectrog
 ![daily spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/ef42c2ae-bb00-4b59-8887-e3a03ce9e559)
 ![monthly spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/2f0b868e-a6b0-48fb-908c-1e8dd5511c3a)
 
-Bir sonraki aşamada modelleme ve tahminleme aşamasına geçilmiştir. Modelleme için aşağıdaki 9 yöntem ile modeler denenmiştir. Herbir senaryo için data %10 test datası olacak şekilde bölünmüştür. Performans değeri bu % 10 için ölçülmüştür. 
-        LightGBM 
-        Adaboost
-        Catboost
-        XGboost
-        SVR Regression
-        Linear Regression
-        Polinomial Regression
-        Random Forest
-        Decision Tree
+Bir sonraki aşamada modelleme ve tahminleme aşamasına geçilmiştir. Modelleme için aşağıdaki 9 yöntem ile modeler denenmiştir. Herbir senaryo için data %10 test datası olacak şekilde bölünmüştür. Performans değeri bu % 10 için ölçülmüştür. Kullanılan yöntemeler; 
+        LightGBM,
+        Adaboost,
+        Catboost,
+        XGboost,
+        SVR Regression,
+        Linear Regression,
+        Polinomial Regression,
+        Random Forest ve
+        Decision Tree'dir.
 
 Belirtilen modeller saatlik data için fit edilmiş ve sonuçları aşağıdaki görselde sunulmuştur. Performans beklenenden düşük çıkmıştır. Performans metriği içinde MAPE değerleri hesaplanmıştır. MAPE değerleri de aşağıdaki görselde mevcuttur. 
 
