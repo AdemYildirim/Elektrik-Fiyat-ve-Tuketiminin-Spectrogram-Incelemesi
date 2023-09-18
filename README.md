@@ -46,7 +46,7 @@ Aşağıdaki grafiklerde elektrik fiyat ve tüketimi için oluşturulan spectrog
 ![monthly spectrogram column](https://github.com/AdemYildirim/Elektrik-Fiyat-ve-Tuketiminin-Spectrogram-Incelemesi/assets/58287201/2f0b868e-a6b0-48fb-908c-1e8dd5511c3a)
 
 Bir sonraki aşamada modelleme ve tahminleme aşamasına geçilmiştir. Modelleme için aşağıdaki modeler denenmiştir.
-        LightGBM
+        LightGBM /
         Adaboost
         Catboost
         XGboost
